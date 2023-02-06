@@ -1,0 +1,64 @@
+NOVIDADES:
+
+A tag <nav> é um container de navegação. Tudo que estiver dentro desta tag será considerado semanticamente um menu de navegação. Ou seja, este deve comportar links para outras páginas ou outras áreas da própria página.
+nav = NAVigation = navegação
+
+A tag <ol> representa um TIPO de lista de itens que é ORDENADO (a ordem importa). 
+ol = Ordered List = lista ordenada
+Existem 5 tipos de listas ordenadas:
+<ol type="1"> = números ordenados (padrão)  : 1, 2, 3..
+<ol type="a"> = ordem alfabética (minúsculo): a, b, c..
+<ol type="A"> = ordem alfabética (maiúsculo): A, B, C..
+<ol type="i"> = números romanos (minúsculo) : i, ii, iii..
+<ol type="I"> = números romanos (maiúsculo) : I, II, III..
+
+O atributo start="" serve para determinar em qual POSIÇÃO COMEÇARÁ a contagem de uma LISTA ORDENADA. Ex:
+<ol type="A" start="4"> = começará na 4° posição, seguindo a ordem alfabética maiúscula, ou seja: "D"
+<ol type="i" start="5"> = começará na 5° posição, seguindo a ordem de números romanos minúsculos, ou seja: "v"
+
+A tag <ul> representa um TIPO de lista de itens que é DESORDENADO (a ordem não importa).
+ul = Unordered List = lista desordenada
+Existem 3 tipos de listas desordenadas:
+<ul type="disc"> = listará os itens com círculos não-vazados (padrão)
+<ul type="circle"> = listará os itens com círculos vazados.
+<ul type="square"> = listará os itens com quadrados.
+
+A tag <li> serve para LISTAR cada um dos itens que estão dentro da lista de itens (seja ela ordenada ou desordenada). Ela é uma tag filha de <ol> ou <ul>.
+li = List items = listar itens
+*A partir da versão HTML5 não é mais necessário FECHAR a tag com </li>. Portanto, caso queira, você pode deixar apenas a tag de abertura em cada um dos itens e isto funcionará normalmente.
+
+É possível fazer listas aninhadas (listas dentro de listas) e, inclusive, misturando os 2 tipos de listas (<ol> e <ul>). Ex:
+<ul>
+    <li>Home</li>
+    <li>Especificações</li>
+    <li>Fotos</li>
+    <li>Multimídia</li>
+    <ol>
+        <li>Músicas</li>
+        <li>Vídeos</li>
+    </ol>            
+    <li>Fale conosco</li>
+</ul>
+
+O atributo reversed (não foi dado na aula) serve para INVERTER a ordem de contagem dos itens (em listas ordenadas) de ascendente (ex: 1,2,3; a,b,c;) para descendente (ex: 3,2,1; c,b,a;). Ex:
+<ol reversed>
+    <li>Home</li>
+    <li>Especificações</li>
+    <li>Fotos</li>
+    <li>Multimídia</li>
+    <li>Músicas</li>
+    <li>Vídeos</li>   
+    <li>Fale conosco</li>
+</ol>
+Neste caso, a contagem dos itens ficará nesta ordem: 7, 6, 5, 4, 3, 2, 1
+
+*Pelo o que eu pesquisei, hoje em dia recomenda-se colocar estas configurações de personalização (type=""; start=""; reversed) na área configurações CSS do documento ao invés do corpo HTML, dado que são configurações de estilo. Ex:
+<style> 
+       ol {
+            list-style-type: 1;
+       }
+
+       ul {
+           list-style-type: circle;
+       }
+</style>

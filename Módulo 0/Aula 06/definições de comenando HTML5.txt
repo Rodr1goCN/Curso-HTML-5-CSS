@@ -1,0 +1,76 @@
+ALGUMAS DEFINIÇÕES:
+
+Breadcrumb ou breadcrumb trail é a trilha de links que você percorreu dentro de um site para chegar na página em que você está. Ex: 
+Pesquisei o Notebook Acer Nitro 5 no site da Kabum e a breadcrumb trail ficou assim:
+Computadores > Notebooks > Notebook Gamer > Notebook Gamer Acer
+
+A hifenização deve ocorrer quando não é possível escrever uma palavra por completo na linha atual, sendo necessário que ela seja finalizada na próxima linha. Quando ocorre esta divisão, há de se colocar um hífen na última sílaba desta palavra, antes da divisão, para informar que o conteúdo da próxima linha se trata da continuação da escrita desta palavra.
+
+  EXPLICAÇÃO CÓDIGO:
+
+A tag <p> serve para criar parágrafos. 
+
+A tag <br> serve para quebrar uma linha, pular uma linha. Esta tag não tem fechamento.
+br = break row = quebrar linha
+
+A entidade de caractere &nbsp; serve para fixar espaços entre palavras. Por exemplo, quando você redimensiona uma janela, diminuindo-a, as palavras vão se quebrando para a linha de baixo para se adaptar e se encaixar neste novo redimensionamento. Se houver a entidade &nbsp; entre 2 palavras, estas 2 palavras NUNCA quebrarão a linha SEPARADAMENTE. Elas sempre quebrarão JUNTAS, como se fosse um único bloco.
+& = character entity = entidade de caractere
+nbsp = non-breaking space = espaço fixo/rígido
+
+*A tag <wbr> faz o oposto da entidade acima. Quando ocorrer o redimensionamento de uma janela, diminuindo-a, se houver a tag <wbr> entre duas palavras, e houver a necessidade delas quebrarem, elas irão quebrar neste ponto em específico.
+wbr = word breaker = quebra de palavra
+
+*A entidade de caractere &shy; serve para, quando houver a necessidade de uma palavra quebrar devido ao redimensionamento de uma janela, ela quebrará com um hífen. Desta forma respeita-se a língua portuguesa, onde o hífen age como indicador de que início do conteúdo da próxima linha se trata da continuação da escrita de uma palavra.
+shy = soft hyphen = hífen condicional (pois ele é invisível, aparecendo apenas quando for necessário)
+
+**Resumindo: a tag <wbr> quebra a palavra sem hífen e a entidade de caractere &shy; quebra a palavra com hífen.
+
+    Símbolos especiais:
+
+  Símbolos relacionais:
+&lt; (less than = menor que)
+&gt; (greater than = maior que)
+&le; (less than or equal to = menor que ou igual a)
+&ge; (greater than or equal to = maior que ou igual a) 
+
+  Símbolos monetários:
+&pound; ( = libra)
+&yen; ( = iene)
+&euro;
+
+  Símbolos de marca:
+&copy; ("COPYright" = direitos autorais)
+&reg; ("REGistered" = marca registrada)
+&trade; ("TRADE mark" = marca comercial)
+
+  Símbolos matemáticos:
+&permil; ("PER MILle" = por mil)
+&infin; ("INFINity" = infinito)
+&times; ("TIMES" = vezes/multiplicação)
+&plusmn; ("PLUS or MiNus" = mais ou menos)
+&oplus; ( = símbolo de adição dentro de uma circunferência)
+&radic; ( = símbolo de RADICiação/raiz quadrada)
+&ne; ("Non Equal" = diferente)
+
+  Símbolos gregos:
+&delta; ( = símbolo do delta minúsculo)
+&Delta; ( = símbolo do Delta maiúsculo)
+&Lambda;
+&omega;
+&phi;
+
+  Símbolos de setas:
+&larr; (Leftwards ARRow = seta para esquerda) 
+&rarr; (Rightwards ARRow = seta para direita)
+&uarr; (Upwards ARRow = seta para cima)
+&uArr; (seta dupla para cima)
+&darr; (Downwards ARRow = seta para baixo)
+&harr; (? = seta para os dois lados (horizontalmente))
+
+  Símbolos de naipes:
+&spades; ( = espadas)
+&clubs; ( = paus)
+&hearts; ( = copas)
+&diams; ("DIAMondS" = ouros)
+
+Para mais símbolos, pesquisar "símbolos HTML5" no Google.

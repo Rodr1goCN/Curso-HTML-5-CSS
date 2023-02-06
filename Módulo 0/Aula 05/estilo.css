@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(224, 225, 225, 1);
+}
+.simbolos{
+    visibility:hidden ;
+}
+p{
+    text-align: justify; text-indent: 50px;
+}

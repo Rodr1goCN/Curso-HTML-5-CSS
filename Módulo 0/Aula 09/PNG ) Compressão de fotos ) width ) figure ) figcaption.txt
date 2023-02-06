@@ -1,0 +1,32 @@
+Diferença entre JPEG e PNG:
+
+O formato JPG utiliza um tipo de COMPRESSÃO de dados que torna os arquivos menores e mais leves. 
+Entretanto, esta compressão também resulta em uma perda de qualidade do arquivo. 
+O JPG não suporta transparência.
+
+O formato PNG utiliza um tipo de COMPRESSÃO SEM PERDAS, ou seja, a qualidade do arquivo não é afetada. 
+Entretanto, esta compressão resulta em arquivos maiores e mais pesados. O PNG suporta transparência.
+
+---
+
+Vamos supor que você queira colocar uma imagem em seu site e você decide utilizar este elemento:
+<img src="fundo.jpg">
+
+Entretanto esta imagem têm uma resolução MUITO ALTA, ocupando grande parte da página. 
+Para resolver isto você pode utilizar o atributo width="" para REDIMENSIONAR a imagem para uma resolução menor,
+desta forma:
+img src="fundo.jpg" width="300;">
+
+*width = largura
+
+Porém, redimensionar a imagem desta forma, não é a maneira mais adequada quando se refere à otimização.
+Pois, tomando o cliente como perspectiva, seu navegador terá que, PRIMEIRAMENTE, fazer o download da imagem GRANDE, que está com a resolução INADEQUADA e, SEGUNDAMENTE, fazer o redimensionamento desta imagem para uma resolução MENOR. 
+Logo, dado que o redimensionamento SUCEDE (vem depois) o download da imagem, significa que, de qualquer forma, o cliente SEMPRE estará baixando uma imagem GRANDE para depois REDIMENSIONÁ-LA (gambiarra).
+O mais adequado e otimizado seria a imagem já estar ORIGINALMENTE NA RESOLUÇÃO CORRETA. Desta forma, o cliente baixará um arquivo menor, fazendo com que a página carregue mais rápido, e não haverá a necessidade de redimensionamento, ou seja, faz-se a mesma coisa de maneira mais leve e com menos linhas de código (otimizado).
+No meu caso, a imagem que escolhi tinha uma resolução de 3500x2625 e pesava 784KB. Após eu redimensionar o arquivo utilizando um software de edição de fotos, ela ficou com uma resolução de 354x200 e pesando 9KB (87x menor).
+
+O que estiver entre a tag <figure> </figure> será considerado SEMANTICAMENTE uma imagem.
+figure = figura
+
+O que estiver entre a tag <figcaption> </figcaption> definirá a LEGENDA da figura adjacente (em que ela está inserida). Nesta legenda é possível utilizar as tags <h> e <p> normalmente. Após definido, a legenda desta imagem agora terá RELEVÂNCIA para leitores de tela (ferramenta utilizada por deficientes visuais) e para os mecanismos de buscas (SEO), como o Google por exemplo, em sua seção de busca por "imagens".
+figcaption = FIGure CAPTION = legenda da figura

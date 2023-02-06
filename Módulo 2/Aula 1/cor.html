@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+    <style>
+        img{
+            width: 800px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body{
+            background-color: antiquewhite; /* #292929 #393939 #3E3940 #615E5C #99A1A6*/
+        }
+        span{
+            font-weight: bolder;
+        }
+        span#ama{
+            color: #fff700;
+           background-color: rgb(168, 169, 169);
+        }
+        span#azu{
+            color: #0000ff;
+            
+        }
+        span#verm{
+            color: red;
+        }
+        span#verd{
+            color: green;
+        }
+        span#lar{
+            color: orange;
+        }
+        span#vio{
+            color: violet;
+        }
+        span#ama-esv{
+            color: rgb(125, 205, 50);
+        }
+        span#ama-ala{
+            color: rgb(205, 135, 50);
+        }
+        span#ver-ala{
+            color: rgb(222, 101, 49);
+        }
+        span#ver-arro{
+            color: rgb(210, 46, 177);
+        }
+        span#azu-arro{
+            color: blueviolet;
+        }
+        span#azu-esv{
+            color: rgb(43, 226, 195);
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Representação por nomes-->
+<h2 style="background-color: blue; color: white;">  Exemplo de Cores  </h2>
+<p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illo quasi necessitatibus molestiae, unde rerum. Beatae, quae officiis deleniti modi fugiat facere eveniet odit, eaque accusamus laudantium labore similique totam.</p>
+<hr>
+
+<!--Representação por Hexadecimais-->
+<!--Decimal: 0 1 2 3 4 5 6 7 8 9-->
+<!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F-->
+<h2 style="background-color: #0000ff; color: #ffffff">  Exemplo de Cores  </h2>
+<p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illo quasi necessitatibus molestiae, unde rerum. Beatae, quae officiis deleniti modi fugiat facere eveniet odit, eaque accusamus laudantium labore similique totam.</p>
+<hr>
+<!--Representação por RGB (Red, Green, Blue)-->
+<h2 style="background-color: #0400ff; color: rgb(255, 255, 255);">  Exemplo de Cores  </h2>
+<p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illo quasi necessitatibus molestiae, unde rerum. Beatae, quae officiis deleniti modi fugiat facere eveniet odit, eaque accusamus laudantium labore similique totam.</p>
+<hr>
+<!--Representação por HSL: Hue Saturation Luminosity-->
+<h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">  Exemplo de Cores  </h2>
+<p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illo quasi necessitatibus molestiae, unde rerum. Beatae, quae officiis deleniti modi fugiat facere eveniet odit, eaque accusamus laudantium labore similique totam.</p>
+<hr>
+    <h1>Cores Primárias / Secundárias e Terciárias</h1>
+    <p>Nós temos 3 cores primárias: <SPAN id="ama">AMARELO</SPAN>, <span id="azu">AZUL</span> e <span id="verm">VERMELHO</span></p>
+    <p>E também temos 3 cores secundárias:<SPAN id="verd">VERDE</SPAN>, <SPAN id="lar">LARANJA</SPAN> e <SPAN id="vio">VIOLETA</SPAN>   
+    <p>Cores Terciárias: são misturas de cores que ficam entre a <abbr title="tons pasteis">primária</abbr> e <abbr title="tons pasteis">secudária</abbr> e a regra para dar nome as cores são: primárias => secundárias. Ex.: <span id="ama-esv">AMARELO-ESVERDEADO</span>, <span id="ama-ala">AMARELO-ALARANJADO</span>, <span id="ver-ala">VERMELHO-ALARANJADO</span>, <span id="ver-arro">VERMELHO-ARROXEADO</span>, <span id="azu-arro">AZUL-ARROXEADO</span> E <span id="azu-esv">AZUL-ESVERDEADO</span></p>
+    </p>
+   <picture>
+    <img src="imagens/circulo-cromatico.png" alt="circulo cromático">
+   </picture>
+   <p><strong>Cores complementares</strong>: são aquelas que estão posicionadas em extremidades opostas do círculo cromático. Elas se caracterizam pelo forte contraste. </p>
+   <p><strong>Cores análogas</strong>: são aquelas encontradas em uma sequência no círculo cromático e, por isso, dão a sensação de que são uma continuidade uma da outra (vizinhas).</p>
+   <p><strong>Cores análogas relacionadas</strong>: são aquelas encontradas em uma sequência no círculo cromático, pega duas cores relacionadas, pula uma casa e pega a próxima cor. </p>
+   <p><strong>Cores intercaladas</strong>: quando se pegam cores com um espaço entre cada. O contraste é bom, mas é mais difícil de combiná-las. Cores triádicas - uma combinação que pega 3 cores equidistantes no círculo cromático.</p>
+   <p><strong>Cores triádicas</strong>: Consiste na utilização de três cores com a mesma distância (equidistante) no círculo cromático. É uma combinação que possui um alto contraste com riqueza de cores.</p>
+   <p><strong>Cores em quadrado</strong>: Também conhecida como harmonia 90°, o quadrado harmônico utiliza quatro cores que formam um quadrado dentro do círculo cromático.</p>
+   <p><strong>Cores tetrádicas</strong>: harmonias com dois pares de cores complementares. Cores em quadrado: harmonia com cores equidistantes que formam um quadrado no Círculo Cromático.</p>
+   <p><strong>Monocromia</strong>:quando usamos apenas uma cor no nosso trabalho. Conseguimos efeitos diversos apenas variando a intensidade e os tons das cores. Quando usamos o lápis de cor, podemos separar todos os lápis da mesma cor para fazer este tipo de trabalho.</p>
+   <hr>
+   <div id="gra">
+   <h1>Gradiente em CSS</h1>
+   <h2>Testando Gradiente</h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+NOVIDADES:
+
+A tag <table> serve para criar uma tabela.
+table = tabela
+
+A tag <tr> serve para ADICIONAR LINHAS em uma TABELA.
+tr = Table Row = linha da tabela
+
+A tag <td> serve para ADICIONAR CÉLULAS dentro das LINHAS de uma TABELA. 
+td = Table Data cell = célula de dado da tabela
+A tag <td> também têm 3 atributos EXCLUSIVOS:
+colspan (define o número de COLUNAS que uma célula deve ocupar)
+rowspan (define o número de LINHAS que uma célula deve ocupar)
+headers (define uma ou mais células de cabeçalho relacionadas. Seu valor é um URL.)
+
+*A tag <table> não pode existir sem a tag <tr> (uma tabela sem linhas!?). Dá mesma forma que a tag <tr> não pode existir sem a tag <td> (uma tabela com linhas, porém sem células de dados!?)
+
+Exemplo com todas as tags (<table>, <tr> e <td>):
+<table>
+    <tr>
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+    </tr>
+</table>
+Neste exemplo temos 1 TABELA com 1 LINHA que contém 3 CÉLULAS e, cada uma destas células, contém o seu próprio conteúdo (A1, B1, C1).
+*Recomendo assistir os vídeos: "Tag table do HTML 5" and "Tag tr do HTML 5" and "Tag td do HTML 5" do canal hcode como complemento desta aula.
+
+A tag <caption> serve para representar o TÍTULO de uma TABELA.
+
+A propriedade border-spacing serve para definir o espaçamento entre as células de uma tabela.
+
+A propriedade rowspan serve para expandir uma linha. 
+Exemplo: 
+<tr><td rowspan="2">bla</td></tr><tr><td>bla1</td></tr>
+<tr><td>bla2</td></tr>
+_________________________ __________________
+|                        |    bla1          |
+|          Bla           |__________________|
+|                        |    bla2          |
+|________________________|__________________|
+
+A propriedade colspan serve para ocupar mais de uma coluna
+Exemplo:
+<tr><td colspan="2">bla</td></tr>
+____________________________________________
+|                 bla                       |
+|___________________________________________|
+
+A propriedade vertical-align serve para alinhar um elemento em seu eixo Y (vertical).
+
+A propriedade text-align serve para alinhar um elemento em seu eixo X (horizontal).

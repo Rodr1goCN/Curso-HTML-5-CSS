@@ -1,0 +1,45 @@
+EXPLICAÇÃO DO CÓDIGO:
+
+Para mudar a cor do background de sua página você pode usar o ATRIBUTO style na seção <body>, acompanhado da propriedade background-color e o seu valor, que é a cor desejada. Ex:
+style="background-color: red;">
+Ou usar a TAG <style> na área <head>, junto do nome da tag <body> e, dentro de chaves, você aplica a propriedade background-color e o seu valor. Ex:
+<head>
+    <style>
+        body {
+            background-color: red;
+        }     
+    </style>
+</head>
+
+  Existem 6 maneiras de se representar uma cor em CSS3:
+
+1 - utilizando o nome da cor:
+background-color: blue;
+
+2 - utilizando o código hexadecimal da cor:
+background-color: #60453E;
+2.1 anatomia do código hexadecimal:
+começa com # seguido de 6 dígitos:
+os 2 primeiros dígitos indicam quantidade de VERMELHO;
+os 2 dígitos centrais indicam a quantidade de VERDE;
+os 2 últimos dígitos indicam a quantidade de AZUL;
+
+3 - utilizando os valores absolutos de RGB (Red, Green e Blue):
+background-color: rgb(161, 211, 239);
+
+4 - utilizando os valores absolutos de HSL (Hue, Saturation e Lightness):
+background-color: hsl(165, 81%, 93%);
+4.1 anatomia do código HSL:
+Os primeiros dígitos indicam Hue (matiz);
+Os dígitos centrais indicam Saturation (saturação) em porcentagem;
+Os últimos dígitos indicam Lightness (luminosidade) em porcentagem;
+
+5 e 6 - utilizando RGBA ou HSLA:
+É possível acrescentar nas funções RGB e HSL o canal ALPHA (opacidade), que permite você configurar a TRANSPARÊNCIA das letras ou do background (transformando-se em RGBA e HSLA, respectivamente). O grau de transparência é determinado por um valor entre 0 (0% visível) e 1 (100% visível). Ex:
+Ex1: color: rgba(161, 211, 239, 0.5);
+Ex2: background-color: hsla(165, 81%, 93%, 0.7);
+No Ex1 o canal alpha está valendo 0.5, logo as letras ficarão 50% visíveis ou 50% transparente.
+No Ex2 o canal alpha está valendo 0.7, logo o background ficará 70% visível ou 30% transparente.
+
+Para adicionar uma imagem no background de sua página você pode usar a propriedade background-image e o seu valor. Ex:
+background-image: url("blablabla.jpg");

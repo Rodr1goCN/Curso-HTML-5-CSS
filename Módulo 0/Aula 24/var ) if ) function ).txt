@@ -1,0 +1,84 @@
+NOVIDADES:
+
+=   significa: símbolo de ATRIBUIÇÃO.
+==  significa: símbolo de VALOR IGUAL.
+=== significa: símbolo de TIPO E VALOR IGUAL.
+tipo = tipo de dado. Pode ser: caractere, inteiro, real, lógico
+
+O if no JS é uma estrutura condicional. Caso (if) a expressão1 seja verdadeira (o que está entre os parênteses), então execute o blocoA (o que está entre as chaves).
+
+    O ato da lâmpada acender está divido em 3 partes: FUNÇÃO, DOM e EVENTO.
+
+1 function mudaLampada(tipo) {
+2     if (tipo==1) {
+3         arquivo="_imagens/lampada-acesa.jpg";
+4     }
+
+  FUNÇÃO:
+linha 1: a função mudaLampada têm o parâmetro TIPO.
+linha 2: caso (if) esta função seja CHAMADA utilizando o "1" como PARÂMETRO de TIPO, esta expressão será verdadeira (tipo==1), pois 1=1.
+linha 3: neste caso, a variável ARQUIVO recebe o valor: "diretório do arquivo da lâmpada acesa".
+
+  DOM:
+É necessário usar o DOM para ACESSAR o ELEMENTO HTML através de seu ID  document.getElementById("luz")  e INTERAGIR com ele  .src=arquivo; .Este último, a interação, como podemos ver, faz o atributo src="" do ELEMENTO <img> receber a variável ARQUIVO. E qual o valor desta variável? Depende do PARÂMETRO utilizado na CHAMADA. Há 3 VALORES POSSÍVEIS, cada um em uma ESTRUTURA CONDICIONAL. Então qual destes deve rodar? Isto é o EVENTO quem irá decidir.
+
+  EVENTO (chamada para a função):
+A função, vínculo e tipo de interação já estão definidos. Agora falta só um EVENTO para fazer a CHAMADA da FUNÇÃO estabelecendo o PARÂMETRO adequado. Neste exemplo queremos fazer a lâmpada ACENDER. Portanto, ao utilizar o EVENTO onmousemove="mudaLampada(1), este fará com que utilize-se o parâmetro "1" para TIPO. E quando TIPO é igual "1", a variável ARQUIVO recebe o valor: "diretório do arquivo da lâmpada acesa". E, como está escrito no DOM (.src=arquivo;), o atributo src="" do ELEMENTO <img> RECEBE esta variável, que está com o diretório da lâmpada acesa dentro dela, substituindo a foto e fazendo a lâmpada acender.
+
+O que é o tipo de dado: BOOLEAN?
+
+Uma variável BOOLEAN representa um valor VERDADEIRO ou FALSO.
+!  significa: operador lógico FALSO.
+!! significa: operador lógico VERDADEIRO.
+
+Logo, !quebrada significa a mesma coisa que: quebrada=false;
+
+Por que a primeira solução do Guanabara para MANTER A LÂMPADA QUEBRADA não deu certo?
+
+A estrutura que o Guanabara fez foi esta:
+1 if (tipo == 3) {
+2     arquivo = "_imagens/lampada-quebrada.jpg";
+3     quebrada = true;
+4 }
+5 if (!quebrada) {
+6     document.getElementById("luz").src = arquivo;
+7 }
+*Os condicionais que usam os parâmetros "1" e "2" funcionam normalmente, pois estes NÃO ALTERAM o valor da variável quebrada, que é FALSE. Então eles têm "acesso livre" às linhas 5 e 6.
+Porém, caso seja utilizado o "3" como parâmetro:
+linha 2: a variável ARQUIVO recebe o diretório da imagem da lâmpada quebrada.
+linha 3: a variável quebrada recebe o valor TRUE;
+O problema esta no fato da variável quebrada receber o valor TRUE ANTES da imagem da lâmpada quebrada ser efetivamente substituída. Sendo true, a expressão da linha 5 torna-se falsa e, portanto, não tem-se acesso à linha 6 que efetivamente faria a troca da imagem.
+
+  Correção do Guanabara:
+1 if (!quebrada) {
+2   document.getElementById("luz").src=arquivo;
+3   if (tipo==3) {
+4       quebrada=true;
+5   }
+7 }
+Agora ele inverteu a ordem.
+linha 2: PRIMEIRO a imagem é substituída.
+linha 3: CASO o parâmetro seja "3" (quebrada)
+linha 4: quebrada recebe true;
+Desta forma, PRIMEIRO a imagem será trocada para a lâmpada quebrada e DEPOIS troca-se o valor da variável quebrada para TRUE. Caso isto aconteça, nenhum dos condicionais terá acesso mais ao "document.getElementById("luz").src=arquivo;", ficando a imagem da lâmpada quebrada para sempre.
+
+  O que é CONCATENAÇÃO?
+
+Concatenar significa: conexão entre, colocar junto.
+
+Quem fez o curso de Lógica de Programação do Gustavo Guanabara e lembra da confusão com as aspas, provavelmente já sabe o que é concatenação e já utilizou ela DIVERSAS VEZES sem nem mesmo saber o que era. Exemplo usando o Portugol do Visualg:
+Algoritmo "semnome"
+Var
+nome, meuNome: caractere
+Inicio
+nome <- "Rodolfinho"
+meuNome <- "Shaolin"
+
+escreva ("Muito prazer em lhe conhecer ", nome,". Chamo-me ", meuNome," Matador de Porco.")
+fimalgoritmo
+
+Ao rodar o programa, aparecerá na saída:
+Muito prazer em lhe conhecer Rodolfinho. Chamo-me Shaolin Matador de Porco.
+---
+Este ato de inserir VARIÁVEIS STRING dentro de uma STRING chama-se CONCATENAÇÃO. Na aula de hoje, aos 11:00 de vídeo, ele inseriu um PARÂMETRO STRING (tipo) dentro do VALOR do ATRIBUTO src="" do ELEMENTO <img>. Mas a lógica é a mesma. A única diferença de sintaxe do Portugol do Visualg para o JavaScript é que têm que se colocar o operador aritmético "+" antes e depois da variável/parâmetro.
+*tipo string = tipo caractere

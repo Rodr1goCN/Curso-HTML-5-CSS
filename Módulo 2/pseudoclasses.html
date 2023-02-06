@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        .d1{
+            display: inline-block; /*na mesma linha*/
+            background-color: aqua;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .d1:hover{
+            background-color: bisque;
+        }
+        div > p{ /* > significa que o parágrafo é filho de uma div*/
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: blueviolet;
+            background-color: rgba(0, 0, 0, 0.849);
+
+        }
+        .mouse:hover{
+            color: rgba(8, 236, 4, 0.722);
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="d1">01</div>
+    <div  class="d1">02</div>
+    <div  class="d1">03</div>
+    <h1 class="exemplo">Exemplo de HOVER</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="mouse">Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</htm 

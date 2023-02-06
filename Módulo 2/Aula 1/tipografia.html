@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
+        @font-face {
+            font-family:'love' ;
+            src: url('Romantic\ Fantasy.ttf') format('truetype');
+            /*  Da pra adicionar outras fonts, adicionando depois do url() format(), url() format()
+
+            
+              Tipos de Format()
+            - Opentype (otf)
+            - Truetype (ttf)
+            - Embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - SVG
+            
+            
+            */
+        }
+        /*em css tudo que começa com arroba tem que ficar abaixo do style ou as primeiras linhas*/
+        body{ /*<-- Seletor*/
+            background-color: antiquewhite;
+            font-family: helvetica; /*font family com duas palavras usa-se aspas */
+            /* ^declarações^ */
+            
+            
+            /*
+            Medidas Absolutas 
+            cm, mm, in(polegada), px, pt, pc(pica)
+            
+            Medidas Relativas
+            em(medida relativa a fonte M), ex(altura X da fonte), rem(media relativa a fonte que esta configurada ao body), vw(largura da viewport(tela)), vh(altura da viewport(tela)), %
+            */
+
+            font-size: 16px; /* 16px é o tamanho normal da fonte = a 1em */
+            
+            /*lighter, normal, bold, bolder*/
+        }
+        h1{
+            font: italic bold 5em arial;
+            /*shorthand font
+            
+           font-style -> font-weight -> font-size -> font-family 
+            */
+        }
+        h2{
+            font: normal 2em serif /*importante sempre seguir a ordem */
+        }
+        h1#fonts{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+        }
+        p#fonts{
+            font-family: 'Sacramento', cursive; 
+            font-size: 1.5em;
+        }
+        p#fontExt{
+            font-family: 'love', 'Times New Roman', Times, serif;
+        }
+        h2#Alinhamento{
+            font: normal 2em arial, verdana, serif;
+            text-align: center;
+        }
+        h3{
+            text-align: right;
+        }
+        p#Alinhamento{
+            font: normal 16px arial, verdana, serif;
+            text-align: justify;
+            text-indent: 2.5em; /*afasta o início do texto (igual ao apertar TAB)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Anatomia das Tipos</h1>
+    <picture>
+        <img src="imagens/Captura de tela 2023-01-20 173015.png" alt="anatomia das tipos" width="1000px">
+        <h2>Fonte com Serifa</h2>
+        <img src="imagens/Captura de tela 2023-01-20 173512.png" alt="fonte com serifa" width="1000px">
+        <h2>Componentes Anatômicos Geométricos</h2>
+        <img src="imagens/Captura de tela 2023-01-20 174017.png" alt="parte geométrica" width="1000px">
+        <h2>Componentes Anatômicos das Letras</h2>
+        <img src="imagens/Captura de tela 2023-01-20 174606.png" alt="Componentes Anatômicos com Base ao Nosso Corpo" width="1000px">
+        <h2>Família Tipográfica</h2>
+        <img src="imagens/Captura de tela 2023-01-20 180045.png" alt="família tipografica" width="1000px">
+        <h2>Categoria de Fontes</h2>
+        <img src="imagens/Captura de tela 2023-01-20 180817.png" alt="categoria de fontes" width="1000px">
+    </picture>
+    <hr>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos veritatis dolores quisquam deserunt ex adipisci velit quam, obcaecati exercitationem officia facere maiores repellendus hic debitis dolorem id! Sed, repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, minus, quibusdam, eius atque ratione saepe at officia qui earum rem quaerat harum molestiae perspiciatis quam ad vero cumque. Commodi, vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste debitis doloribus, aut porro dignissimos, nulla ratione nostrum eum commodi earum maiores temporibus perferendis nemo vitae molestiae iure unde laudantium?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus in nostrum, soluta obcaecati asperiores, temporibus, at dolore aspernatur exercitationem voluptate similique maiores esse assumenda dolorem! Deleniti incidunt sed aperiam itaque?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus ab, veniam voluptatum placeat minima nulla doloribus rerum at explicabo fugit illum necessitatibus libero, unde officiis maiores aspernatur dicta nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eum quisquam consectetur expedita necessitatibus delectus distinctio? Sapiente molestiae officiis, expedita rerum iste laborum voluptatem quasi impedit dolorem fugit ipsum illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt mollitia dolorum! Aperiam, explicabo ipsam, voluptatibus a consequuntur, provident quis harum fugit expedita autem magnam itaque hic vero ut quaerat?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam totam officiis excepturi laborum delectus, laudantium odit repudiandae voluptates deserunt cupiditate adipisci necessitatibus accusamus accusantium, fugiat sapiente quia ducimus vel, asperiores tempore veniam! Omnis, ipsam esse assumenda sit officiis corporis doloribus optio recusandae laboriosam, in similique sed maxime quidem eius enim unde vero iste maiores ex. Quos suscipit illum dicta sequi neque ratione fuga aperiam, consequuntur similique, explicabo minus dolores consectetur voluptate sunt? Saepe doloremque nulla necessitatibus nam corrupti repellendus repudiandae vitae aspernatur, officiis tenetur cumque iusto tempore, impedit, rerum harum! Fugiat similique molestiae corrupti voluptas labore dicta, dolorem nesciunt consectetur?</p>
+    <hr>
+    <h1 id="fonts">Fontes com Google Fonts</h1>
+    <h2>Título</h2>
+    <p id="fonts">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident sequi voluptates iusto nam aliquid cumque impedit corporis deserunt reiciendis optio atque quam in repellendus quae, officia eligendi aperiam quasi, eos, quibusdam nemo? Eum adipisci expedita temporibus ullam enim inventore quisquam dolorem sunt fuga et. Corrupti, reiciendis! Beatae perspiciatis dolor sequi ipsam! Porro, nostrum corporis accusantium harum accusamus, distinctio deserunt sit voluptatem magni tempora id quam. Vero pariatur, molestiae distinctio veniam architecto quae adipisci corrupti magnam ipsam facere nesciunt minus quas accusamus placeat vitae voluptas! Nulla dolores similique aperiam est quos necessitatibus, eveniet aspernatur ex quaerat. Eos, praesentium laborum aliquam fuga suscipit quae neque dicta quis, ratione id est eius voluptatibus, illo cumque sit beatae dolores doloribus accusantium natus numquam dolorum vel. Obcaecati, ex praesentium? Repellat, et eaque voluptatibus ipsum odit odio vitae mollitia ipsa voluptates nulla, suscipit fugiat saepe! Nobis qui blanditiis officia tempora mollitia? Iste reprehenderit voluptate illum nisi sint, atque fugiat aliquam, unde iusto minima impedit soluta eligendi, aut sequi possimus quas rerum velit quidem. Officiis nobis reprehenderit laborum, unde nihil expedita deserunt ipsam amet pariatur exercitationem nostrum, quos alias consequatur itaque voluptates distinctio vero at! Incidunt officia voluptatem id doloremque ab unde tempora ipsum asperiores eum. Rodrigo</p>
+    <hr>
+    <h2>Fontes Externas</h2>
+    <p id="fontExt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos amet quisquam qui at. Adipisci, voluptatum. Dicta cum quibusdam tempore, commodi, ea ab a eius, dolore cupiditate ipsa dolores? Ad incidunt unde aliquid voluptas minus magni? Perferendis esse culpa, quos placeat aperiam officia quisquam necessitatibus ratione recusandae sint iusto commodi exercitationem totam impedit quidem nihil nisi, obcaecati amet accusamus atque sit fuga consequatur? Nostrum, ipsum eligendi voluptates autem nemo veritatis repellendus id aliquam distinctio porro? Suscipit quos officia neque fuga eum tempora quidem ipsum quasi voluptas iste eos, magnam non enim at omnis consequuntur commodi quas autem! Optio debitis a eaque suscipit nihil voluptates esse neque dolorum, id dolore quasi deserunt voluptatum error deleniti at eum ipsam earum voluptas, odio, quo et veritatis. Perspiciatis possimus repellendus magni placeat explicabo quam ea nihil, beatae autem molestias dicta corrupti vel. Quidem id ullam delectus explicabo molestias dignissimos quam ipsum error nesciunt in, doloremque, facilis, quos architecto sapiente fugiat necessitatibus. Beatae accusamus culpa animi deleniti quaerat nam dicta nobis nemo maxime officia, molestiae, provident ad eos soluta deserunt voluptatem dolore reprehenderit magnam et inventore consequuntur quidem architecto quae. Soluta exercitationem in tempore beatae? Cumque, dolore. Veritatis maiores quidem, perferendis expedita tempore ratione laborum suscipit.</p>
+    <hr>
+    <h2 id="Alinhamento">Tipos de Alinhamento</h2>
+    <h3>Subtítulo</h3>
+    <p id="Alinhamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore quibusdam vitae consequatur at ab quaerat possimus suscipit porro ad, quos sapiente velit, dolore in! Consectetur, quaerat pariatur aperiam nesciunt corrupti mollitia nostrum vel ab repudiandae necessitatibus placeat quibusdam obcaecati hic magni omnis quos sed assumenda eveniet explicabo porro. Deleniti, voluptatum tenetur? Animi sunt odit totam aspernatur quae accusantium placeat unde numquam ipsam. Voluptatibus, ad. Vitae quam quaerat, quae eligendi ut illo minima nam odit quidem fugiat nemo blanditiis! Blanditiis omnis ducimus repellat fuga fugiat, dolorem aliquam itaque! Reprehenderit impedit, inventore nemo minus nihil quae laboriosam deserunt. Ipsum libero ab repellendus illo in sequi excepturi qui inventore officiis dolor nihil incidunt, dolore porro iusto. Corporis facere officiis sunt voluptatum suscipit nostrum voluptas soluta necessitatibus repellat. Quibusdam facere voluptate ut amet? Magni nam soluta officiis accusamus possimus distinctio cum quod, asperiores tenetur? Commodi dignissimos error quia hic facere excepturi quaerat velit cupiditate nulla laudantium ea temporibus maxime dolor blanditiis repellendus ab aspernatur culpa perspiciatis veniam, assumenda ratione sint deserunt. Dignissimos in neque quam dicta sed, ratione numquam ad aliquam ab magnam reiciendis ducimus doloribus assumenda temporibus et sequi, quod a. Consequuntur incidunt atque delectus itaque perspiciatis cum esse corrupti voluptas?</p>
+   
+</body>
+</html>

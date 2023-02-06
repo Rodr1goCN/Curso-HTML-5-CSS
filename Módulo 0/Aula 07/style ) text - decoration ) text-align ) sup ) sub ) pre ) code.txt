@@ -1,0 +1,41 @@
+<span style="text-decoration: underline; (sublinhado)> </span>
+                              overline; (linha acima da palavra)
+                              line-through (riscado)
+                              none        (sem nada)
+
+
+
+
+<span style="font-weight:bold>   (negrito)
+                         bolder> (mais negrito que o negrito)
+                         100-900> (nivel de negrito)
+
+
+<h2 style="text-align: center;>
+                       left;>
+                       right;>
+
+
+<p style="text-align: justify;> (justifica o texto)
+
+
+
+<p style="text-align: justify; text-indent: 50px;> (o início de parágrafo)
+
+
+<sup></sup>    (sobre escrito)
+<sub></sub>    (subscrito)
+
+<code></code>  (mostra os códigos no html)
+<pre></pre>    (deixa o código do jeito que foi escrito)
+
+exemplo:
+<pre>
+<code>
+#include &lt;iostream&gt;  (<iostream>)
+int main() {
+    cout << "olá, Mundo!";
+    return 0
+}
+</code>
+</pre>

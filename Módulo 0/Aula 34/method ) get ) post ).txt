@@ -1,0 +1,30 @@
+NOVIDADES:
+
+O atributo method="", dentro da tag <form>, serve para definir COMO as INFORMAÇÕES do FORMULÁRIO serão ENVIADAS. Existem 2 valores possíveis: "get" e "post". 
+1 - method="get"
+- rápido/menos seguro: As informações enviadas APARECEM no URL na forma de VARIÁVEIS (chave/valor).
+- O comprimento do URL é limitado à 3000 caracteres.
+2 - method="post"
+- "lento"/mais seguro: As informações enviadas NÃO APARECEM no URL.
+- Não há limite de caracteres.
+
+O atributo action="", dentro da tag <form>, especifica para ONDE as INFORMAÇÕES do FORMULÁRIO serão ENVIADAS. O seu valor pode ser um URL ou um EMAIL (mailto:).
+
+A tag <select> serve para criar uma LISTA DROP-DOWN.
+
+A tag <option>, dentro da tag <select>, permite a criação de uma OPÇÃO/alternativa dentro desta lista.
+
+O atributo  selected  , dentro da tag <option>, serve para MARCAR PREVIAMENTE alguma das opções.
+*Semelhante ao atributo  checked  da aula anterior.
+
+O atributo value="" serve para definir QUE VALOR será enviado ao servidor no momento em que um FORMULÁRIO for ENVIADO.
+
+A tag <optgroup>, dentro da tag <select>, serve para AGRUPAR várias OPÇÕES (tags <option>) dentro de uma SEÇÃO dentro da lista drop-down.
+
+A tag <datalist> serve para criar uma LISTA PRE-DEFINIDA de opções para um <input>. Neste, diferente da tag <select>, é possível ESCREVER e não apenas ESCOLHER uma das opções listadas. Então o <datalist> funciona mais como uma LISTA DE SUGESTÕES, uma LISTA DE AUTOCOMPLETAR.
+
+O atributo list="", dentro da tag <input>, serve para ATRELAR este INPUT à uma tag <datalist>. O seu valor é o ID da tag <datalist>.
+
+O atributo type="range", dentro da tag <input>, serve para criar um "seletor deslizante" em que você pode definir um valor arrastando-o horizontalmente. Neste cenário o valor em si não é tão importante devido à imprecisão deste seletor.
+
+A tag <textarea> serve para criar uma CAIXA DE TEXTO com tamanho PERSONALIZADO. Você pode utilizar o atributo cols="" para determinar o número de COLUNAS. E também pode utilizar o atributo rows="" para determinar o número de LINHAS.

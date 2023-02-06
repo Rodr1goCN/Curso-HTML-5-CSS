@@ -1,0 +1,24 @@
+NOVIDADES:
+
+A tag <section> serve para representar uma seção GENÉRICA, geralmente com um título, quando não há uma tag semântica mais específica para representar um elemento.
+section = seção
+
+A tag <aside> serve para representar uma seção de conteúdo SECUNDÁRIO àquele que é PRINCIPAL. Ou seja, pode ser uma notícia ligeiramente relacionada ao tema principal, um glossário, avisos, etc.
+aside = de lado/ao lado = conteúdo lateral/secundário
+
+A tag <footer> serve para representar uma seção de RODAPÉ.
+*É importante enfatizar que não é apenas a PÁGINA PRINCIPAL que têm rodapé. 
+Seções como: <section>, <aside>, <nav>, <figure>, <article> também podem ter o seu próprio rodapé. Estes rodapés normalmente contém informações sobre o autor, contato, direitos autorais ou links para conteúdos relacionados.
+footer = rodapé
+
+A propriedade float: serve para fazer com que um elemento FLUTUE dentro do seu container (bloco). 
+Um elemento que flutua faz com que os outros elementos dentro do mesmo container (bloco) posicionem-se ao seu lado. Você pode definir em QUAL LADO ele irá flutuar através destes valores:
+float: left; (o elemento irá flutuar à esquerda do bloco)
+float: right; (o elemento irá flutuar à direita do bloco)
+float: none; (o elemento não irá flutuar (valor padrão))
+
+A propriedade clear: serve para fazer com que um elemento NÃO SEJA INFLUENCIADO pela propriedade float: de outros elementos. Ou seja, o clear: irá anular o efeito do float:. Ex:
+clear: left; (não sofrerá influência de float: left;)
+clear: right; (não sofrerá influência de float: right;)
+clear: both; (não sofrerá influência de ambos lados)
+*Recomendo assistir o vídeo com o título: "Curso de CSS3 #34 - Propriedades float e clear" do CFBCursos que ele explica e ilustra muito bem tanto o float: quanto o clear:.

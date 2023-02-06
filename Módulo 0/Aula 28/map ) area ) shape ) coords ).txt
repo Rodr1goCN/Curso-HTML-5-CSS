@@ -1,0 +1,44 @@
+A tag <map> serve para adicionar a característica de MAPA à uma IMAGEM (image map). Isto é, uma IMAGEM com ÁREAS em que você pode clicar.
+
+O atributo name="" dentro da tag <map> serve para definir um NOME para o MAPA.
+
+O atributo usemap="" serve para fazer a associação de uma IMAGEM com um MAPA. Primeiramente é necessário dar um NOME ao MAPA utilizando o atributo name="". E depois, dentro da tag <img>, usar o atributo usemap="" com o valor correspondente ao atributo name="" dado à tag <map>.
+*É necessário colocar uma CERQUILHA no início. Ex da aula:
+usemap="#meumapa"
+
+A tag <area> é filha da tag <map> e serve para definir uma ÁREA dentro de um *image map.
+*image map é uma <img> que já está associada (usemap="") como o name="" de um <map>.
+
+O atributo shape="" é um atributo da tag <area> e serve para especificar uma FORMA para uma ÁREA. Esta pode ser retangular, circular ou poligonal. Seus respectivos valores são: "rect", "circle" e "poly".
+*Ou seja, com a tag <area> temos uma área clicável. Com o atributo shape="" determinamos o FORMATO desta área clicável.
+
+----------
+O atributo coords="" é um atributo da tag <area> que é utilizado junto do atributo shape="" e serve para especificar as COORDENADAS de uma ÁREA dentro de um IMAGE MAP. Ou seja, o coords="" determinará ONDE ESTARÁ LOCALIZADO o shape="", que é o formato da área clicável. O seu valor são coordenadas separadas por vírgula. 
+
+Retângulo - no caso da forma ser shape="rect", ou seja, retangular, é necessário informar as COORDENADAS do CANTO SUPERIOR ESQUERDO e CANTO INFERIOR DIREITO deste retângulo. Ex da aula:
+coords="179,202,270,260"
+179,202 é o X e Y do CANTO SUPERIOR ESQUERDO
+270,260 é o X e Y do CANTO INFERIOR DIREITO
+
+Círculo - no caso da forma ser shape="circle", ou seja, circular, é necessário informar as COORDENADAS do CENTRO e do *RAIO deste círculo. Ex da aula:
+coords="158,243,12"
+158,243 é o X e Y do CENTRO
+12 é o RAIO
+*Para saber o RAIO de um círculo basta pegar a largura (ou altura) e dividir por 2. Desta forma, você terá a distância do centro do círculo até a sua parede (raio).
+
+Polígono - no caso da forma ser shape="poly", ou seja, poligonal, é necessário informar as COORDENADAS de todas as *INTERSECÇÕES deste polígono EM SENTIDO HORÁRIO. Ex da aula:
+coords="28,143,83,216,84,249,27,169"
+28,143 é o X e Y do CANTO SUPERIOR ESQUERDO
+83,216 é o X e Y do CANTO SUPERIOR DIREITO
+84,249 é o X e Y do CANTO INFERIOR DIREITO
+27,169 é o X e Y do CANTO INFERIOR ESQUERDO
+*Intersecção é o ponto em que uma linha entra em contato ou cruza com uma outra linha.
+
+**Transformei o retângulo inicial (tela) em um polígono e ficou assim:
+shape="poly" coords="183,219,266,208,266,244,183,256"
+----------
+
+O atributo href="" serve para indicar o URL DO ARQUIVO que será aberto no momento em que a área for CLICADA. Para especificar QUAL ELEMENTO dentro deste ARQUIVO receberá esta ÁREA, basta colocar uma CERQUILHA seguido do ID do ELEMENTO. Ex da aula:
+href="google-glass.html#tela"
+
+O atributo target="" serve para definir ONDE ESTE ARQUIVO (google-glass.html#tela) será aberto. No caso da aula, é dentro do <iframe> que têm como name="janela".

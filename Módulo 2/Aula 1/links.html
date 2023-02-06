@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: antiquewhite;
+        }
+        a{
+            color: rgb(123, 125, 125);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .semunderline:visited{
+            color: rgb(255, 0, 0);
+        }
+        .semunderline:hover{
+            text-decoration: underline dotted black;
+        }
+        .especial{
+            background-color: rgba(0, 0, 0, 0.748);
+            text-decoration:none;
+            color: aliceblue;
+        }
+        a:active{
+            color: aqua;
+        }
+        .especial::before{
+            content: '☛ ';
+        }
+        .especial::after{ /*pseudo classe uma vez : e pseudo elemento duas vezes ::*/
+            content: ' ☚';
+           
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Rodr1goCN" target="_blank" class="semunderline">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/@doobr" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://twitter.com" target="_blank" class="semunderline">Página no Twitter</a></li>
+</body>
+</html>

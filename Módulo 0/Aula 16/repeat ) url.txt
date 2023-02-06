@@ -1,0 +1,22 @@
+A propriedade background: serve para você inserir um plano de fundo. 
+Ela também é uma propriedade shorthand (propriedade abreviada) para várias outras propriedades. Para saber mais, Google: "background property MDN"
+
+A *função CSS url() é utilizada para incluir um arquivo.
+*Função CSS é um tipo valor que representa TIPOS de dados que são mais complexos ou invoca dados especiais de processamento ou cálculos.
+Dentro desta função você irá colocar o URL do arquivo entre "". Exemplo da aula:
+url("../_imagens/glass-logo-peq.jpg")
+*Os 2 pontos no início significam: ir para a PASTA ANTERIOR (projeto-glass-html5) à PASTA ATUAL (_css, onde está o estilo.css).
+
+A propriedade repeat, usada em conjunto da propriedade background:, serve para definir SE a imagem de plano fundo será ou não repetida e, caso seja, define-se também COMO ela será repetida. 
+Exemplo de alguns valores:
+repeat    | a imagem será repetida no eixo X e Y (padrão).
+repeat-x  | a imagem será repetida apenas no eixo X.
+repeat-y  | a imagem será repetida apenas no eixo Y.
+no-repeat | a imagem será exibida apenas uma vez.
+Exemplo da aula:
+background: url("../_imagens/glass-logo-peq.jpg") no-repeat
+
+A propriedade background: também permite, após inserida a imagem, configurar a sua localização através das coordenadas do eixo X e Y na página. Exemplo da aula:
+background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+
+*Com o background já definido, caso você clique e arraste a imagem do background, nada irá acontecer. Isto acontece pois aquilo NÃO É UMA IMAGEM, e sim, antes de tudo, um BACKGROUND.

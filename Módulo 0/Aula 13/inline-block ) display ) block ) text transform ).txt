@@ -1,0 +1,55 @@
+NOVIDADES:
+
+O atributo id="" é semelhante ao atributo class="". Porém, com a diferença de que o id="" é utilizado para rotular UM elemento em específico para fins de configuração de estilo/formatação. 
+Já o class="" serve para rotular VÁRIOS elementos de uma vez só. 
+A sintaxe do Seletor de ID é semelhante ao Seletor de Classes também. A do atributo id="" é: tag#nome-do-id. Já a do atributo class="" é: tag.nome-da-classe. No caso desta da aula, a tag <nav> foi rotulada com id="menu". Neste caso, fica assim: nav#menu
+
+A propriedade list-style: é uma propriedade shorthand (propriedade abreviada), ou seja, ela permite que você configure o valor de várias outras propriedades simultaneamente. Ex:
+list-style-type: 
+list-style-image:
+list-style-position:
+Para saber mais sobre os valores possíveis para cada uma destas propriedades, jogue no Google: list-style MDN
+No caso desta aula, foi inserido apenas o valor "none;". Isto alterou apenas a propriedade type: pois, dentre as propriedades citadas acima (type, image e position), a única que suporta valor "none;" é a propriedade type:. 
+Então, caso fosse colocado "list-style-type: none;", daria na mesma.
+
+A propriedade text-transform: serve para capitalizar um texto (maiúsculo ou minúsculo). Esta propriedade têm DIVERSOS valores possíveis. Alguns exemplos:
+text-transform: uppercase; (todas letras ficam maiúsculas)
+text-transform: lowercase; (todas as letras ficam minúsculas)
+text-transform: capitalize; (apenas a 1° letra fica maiúscula) 
+
+----------
+A propriedade display: serve para especificar o TIPO de *caixa de renderização usada por um elemento.
+*Todo elemento têm um perímetro retangular em volta dele. Isto é a caixa de renderização. Abra um site qualquer, pressione CTRL+SHIFT+C e passe o cursor em cima de qualquer elemento da página e você verá as caixas de renderização. 
+Existem 3 tipos de caixas principais:
+*ANTES DE TUDO: Abra o seu index.html, redimensione a janela do navegador (horizontalmente) para o menor tamanho possível e teste os valores a seguir:
+
+display: inline; - dispõem os elementos em LINHA, como se fossem tags <span>. Faça esta alteração:
+nav#menu li {
+    display: inline;
+}
+Isto fará com que as tags <li> fiquem AMONTOADAS.
+As propriedades como margin:, width:, height: e padding: NÃO ESTÃO funcionando de maneira adequada. 
+O width: de cada tag <li> está limitado ao tamanho do CONTEÚDO. 
+Redimensione a janela do navegador (horizontalmente) aos poucos para MAIOR e você verá que as tags <li> ficarão dispostas em linha, ou seja, uma ao lado da outra.
+
+display: block; - dispõem os elementos em BLOCO, como se fossem tags <div>. Faça esta alteração:
+nav#menu li {
+    display: block;
+}
+Isto fará com que as tags <li> fiquem ORGANIZADAS.
+As propriedades como margin:, width:, height: e padding: ESTÃO funcionando de maneira adequada. 
+O width: de cada tag <li> está ocupando TODA A LINHA. 
+Redimensione a janela do navegador (horizontalmente) aos poucos para MAIOR e você verá que as tags <li> ficarão dispostas em bloco, ou seja, uma acima da outra.
+
+display: inline-block; - dispõem os elementos em LINHA e em BLOCO ao mesmo tempo. Faça esta alteração:
+nav#menu li {
+    display: inline-block;
+}
+Isto fará com que as tags <li> fiquem ORGANIZADAS.
+As propriedades como margin:, width:, height: e padding: ESTÃO funcionando de maneira adequada (COMPORTAMENTO BLOCK).
+O width: de cada tag <li> está limitado ao tamanho do CONTEÚDO (COMPORTAMENTO INLINE).
+Redimensione a janela do navegador (horizontalmente) aos poucos para MAIOR e você verá que as tags <li> ficarão dispostas em BLOCO (organizadas, com as propriedades supracitadas sendo aplicadas) e em LINHA (width: está limitado ao tamanho do CONTEÚDO e cada um dos BLOCOS estão dispostos em linha, um ao lado do outro).
+**Recomendo assistir o vídeo com o título: "CSS: Entendendo o Display" do canal O Irmão mais Velho que ele explica e ilustra muito bem.
+----------
+
+Relembrando da aula 10: as propriedades padding: e margin: servem para determinar o valor da margem interna e externa, respectivamente.

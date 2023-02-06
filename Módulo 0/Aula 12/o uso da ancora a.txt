@@ -1,0 +1,27 @@
+NOVIDADES:
+
+Diferença entre as tags <link> e <a>:
+
+A tag <link>
+faz uma RELAÇÃO do DOCUMENTO ATUAL com OUTRO DOCUMENTO/RECURSO externo (rel="" e href="");
+é utilizada na área <head> do documento;
+têm apenas abertura;
+É um elemento vazio, ou seja, não tem conteúdo (elementos aninhados);
+NÃO É exibido no front-end, portanto não é "clicável";
+link = ligação;
+estrutura:
+<link atributos_com_valor>
+
+A tag <a>
+faz uma LIGAÇÃO do USUÁRIO com algum SITE/PÁGINA externa (href="");
+é utilizada na área <body> do documento;
+têm abertura e fechamento;
+NÃO É um elemento vazio, ou seja, pode ter conteúdo (elementos aninhados);
+É exibido no front-end, portanto o cliente pode clicar;
+a = Anchor = âncora;
+estrutura:
+<a atributos_com_valor>elementos_aninhados</a>
+
+O atributo target="" serve para definir QUAL será o COMPORTAMENTO do link ao ser clicado. Ex:
+taget="_self"  = o link abrirá na mesma aba (valor padrão)
+taget="_blank" = o link abrirá em outra aba

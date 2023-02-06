@@ -1,0 +1,100 @@
+Alguns notes que fiz:
+*Existem notes ESPECÍFICOS desta aula e RELACIONADOS.
+
+O que estiver entre a tag <script> </script> será considerado um código em JavaScript.
+
+    DEFINIÇÕES DE TERMOS:
+  
+  OBJETO:
+
+/* Este eu achei que era óbvio, mas acabei descobrindo que é meio confuso de entender */
+
+No site w3schools encontrei estas 2 definições:
+
+1 - Um OBJETO no JS é praticamente "QUALQUER COISA". Variáveis são objetos. Propriedades são objetos. Métodos são objetos. Datas, cálculos matemáticos, matrizes, funções, valores (exceto valores primitivos). Enfim, objetos são objetos.
+
+2 - Um OBJETO no JS é um CONTAINER de PROPRIEDADES e MÉTODOS.
+
+No vídeo (em inglês) com o título: "JavaScript objects explained the visual way" do 3dCodeWorld ele definiu destas 2 formas:
+
+1 - Um OBJETO no JS é uma COLEÇÃO DE PROPRIEDADES, onde cada propriedade têm um par de chave-valor (key-value).
+*chave = key = nome da propriedade
+
+2 - Um OBJETO no JS é uma COLEÇÃO DESORDENADA de "VALORES COM UM NOME".
+
+/* Sinceramente, não sei ainda se entendi xD. O que você acha? Qual a definição de objeto mais apropriada? */
+
+  FUNÇÃO:
+
+É um subprograma que pode receber PARÂMETROS e RETORNAR um resultado. São AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. É um bloco de códigos projetado para executar uma tarefa ou calcular um valor.
+
+  MÉTODO:
+
+Um MÉTODO no JS é uma FUNÇÃO que está armazenada na forma de um CONJUNTO DE PROPRIEDADES dentro de um OBJETO. Ou seja, MÉTODOS são AÇÕES que podem ser performadas em OBJETOS.
+
+IMPORTANTE:
+Quando criamos variáveis e funções de *escopo GLOBAL, nós os chamamos de VARIÁVEIS e FUNÇÕES (não muda nada). 
+Quando criamos variáveis e funções de *escopo LOCAL, dentro de um OBJETO por exemplo, nós os chamamos de PROPRIEDADES e MÉTODOS.
+*escopo será abordado no final deste comentário.
+
+EXEMPLOS DE MÉTODOS:
+
+O método alert("") mostra uma caixa de diálogo de alerta. Dentro das aspas você pode definir o conteúdo desta mensagem de alerta. Só há a opção "OK" para o cliente clicar.
+
+O método confirm("") mostra uma caixa de confirmação. Dentro das aspas você pode definir o conteúdo desta mensagem de confirmação. Há as opções "OK" e "Cancelar" para o cliente clicar.
+
+O método prompt("") mostra um caixa de solicitação. Dentro das aspas você pode definir o conteúdo desta mensagem de solicitação. Dentro desta caixa haverá outra, uma caixa de mensagem, que permite o cliente atender a mensagem de solicitação. Há as opções "OK" e "Cancelar" para o cliente clicar.
+prompt = solicitar
+
+O método console.log("") exibe uma mensagem no console do navegador.
+
+  O que é DOM?
+
+DOM (Document Object Model), Modelo de Documento por Objeto, é uma *interface padronizada utilizada para REPRESENTAR a sua PÁGINA WEB. Ela utiliza uma linguagem neutra que, por meio de uma árvore hierárquica de diretórios, permite você ACESSAR e INTERAGIR com QUALQUER ELEMENTO de sua PÁGINA WEB. Viabilizando assim você rodar SCRIPTS e alterar o estilo (CSS3), conteúdo e estrutura (HTML5) de seu documento.
+*Interface, do latim INTER(entre) + FACIES(faces), significa: ligação física ou lógica entre 2 sistemas ou partes que não poderiam ser conectados diretamente. Ou seja, o DOM é o INTERMEDIADOR da COMUNICAÇÃO entre a linguagem JavaScript com as tecnologias HTML5 e CSS3.
+
+Exemplos da aula de hoje:
+
+document.write("Olá, mundo!"); - permite você escrever (.write) um conteúdo ("Olá, mundo!") na saída HTML (document.)
+
+document.write("Olá! Hoje é dia " + Date()); - permite você escrever (.write) uma função Date() que irá retornar a DATA e HORA exata na saída HTML (document.).
+*É necessário utilizar o sinal de + após a string ("Olá! Hoje é dia ") para acrescentar a função.
+**É necessário colocar, após o nome da função, dois parênteses () para indicar os parâmetros da função que, neste exemplo, não estão especificados.
+ATENÇÃO:
+*Todas as configurações feitas em CSS devem estar dentro da tag <style> ou do atributo style="".
+**Todas as configurações feitas em JavaScript devem estar dentro da tag <script>.
+
+Existem VÁRIAS maneiras de SELECIONAR estes ELEMENTOS utilizando o DOM. Exemplo de 5 maneiras:
+1 - by Tag         - getElementsByTagName("")
+2 - by ID            - getElementByID("")
+3 - by Name     - getElementsByName("")
+4 - by Class      - getElementsByClassName("")
+5 - by Selector - querySelector (""); querySelectorAll ("");
+Atente-se que alguns dos seletores estão no singular e outros no plural: Element e ElementS
+Caso utilize um seletor que está no plural, para especificar qual tag, name ou class você deseja se referenciar, você têm que usar, após os parênteses (), os colchetes [] e, dentro destes, você indicará qual a POSIÇÃO do elemento que você deseja selecionar.
+Ex:
+GetElementsByTagName("p")[2];
+Neste exemplo eu selecionei, dentro dos parênteses, todas as tags <p>. E, dentro dos colchetes, eu selecionei a tag <p> que se encontra na 2° POSIÇÃO. Ou seja, eu selecionei a 3° tag <p>.
+*Lembrando que a contagem começa em 0. Portanto:
+a posição 0 é a 1° tag <p>
+a posição 1 é a 2° tag <p>
+a posição 2 é a 3° tag <p>
+
+  O que é ESCOPO?
+
+Escopo é a região onde uma determinável variável irá funcionar. Esta pode ser GLOBAL ou LOCAL.
+*Quem assistiu pode relembrar: no Curso de Lógica de Programação do Gustavo Guanabara, na aula #12 sobre Procedimentos, aos 16:07 de vídeo, ele explica o que é escopo.
+
+  Qual a diferença entre: Var, Let e Const?
+
+Var - cria uma variável de escopo GLOBAL. Ou seja, esta variável funciona em QUALQUER parte do programa, sendo reconhecida GLOBALMENTE.
+
+Let - cria uma variável de escopo LOCAL. Ou seja, esta variável funciona APENAS dentro do BLOCO em que ela está declarada, sendo reconhecida LOCALMENTE.
+
+Const - cria uma variável de escopo LOCAL, porém com uma peculiaridade. Antes de tudo:
+Caso utilize o "Let" para atribuir um valor à uma variável, este valor, caso queira, pode ser REATRIBUÍDO normalmente no futuro. Isto vale para a "Var" também.
+Entretanto, caso utilize o "Const" para atribuir um valor à uma variável, é impossível REATRIBUIR um valor à ela. Pois esta é uma variável CONSTANTE, ou seja, uma vez atribuído o valor, este será CONSTANTE e não pode ser REATRIBUÍDO. Mas isso não significa que ele não possa ser MODIFICADO.
+O que é quero dizer com: REATRIBUIR e MODIFICAR:
+Reatribuir: define-se um valor INICIAL e, posteriormente, REATRIBUÍ-SE para outro valor SECUNDÁRIO. Então existe um ANTES e um DEPOIS. Existe um momento em que o valor INICIAL estava valendo e, posteriormente, o valor SECUNDÁRIO passou a valer.
+Modificar: você define um valor inicial e depois MODIFICA na RAIZ, na própria CONSTANTE, para algum outro valor. Então não é uma REATRIBUIÇÃO. Não existe um ANTES e DEPOIS. O valor é apenas MODIFICADO. É como se o valor que estava antes nunca tivesse existido.
+*Recomendo assistir o vídeo com o título: "Var, Let, Const - Tudo o que você precisa saber" do Programador BR que ele explica e ilustra detalhadamente cada um.
