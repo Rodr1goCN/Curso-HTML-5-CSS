@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('Exercícios/imagens/target001.png');
+            background-position: center center;
+            background-size: 100% 100%;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+            position: relative;
+        }
+        #conteudo{
+            background-image: url('Exercícios/imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute; /* o conteúdo de fora é relativo e o de dentro tem o posicionamento absoluto e quando é absoluto você pode configurar duas propriedades o left e o top*/
+            height: 200px;
+            margin: auto;
+            background-color: yellowgreen;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-200px, -100px);/* você pode mexer com o objeto mudando de lugar, adiconando nos () a quantidade de px/% que deseja e a ordem é primeiro número mexa a (valor positivo)direita/esquerda(valor negativo) e o segundo número mexa (valor negativo)cima/baixo (valor positivo) */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
