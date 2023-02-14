@@ -19,6 +19,7 @@ header > h1{
     text-align: center;
     font-size: min(160px, 10vw);
     padding-top: 50px;
+    /* pode se usar o font-variante: small-caps; para deixar todas as letras maiúsculas mas as primeiras letras ficam maiores*/
 }
 
 header > h1 > span{
