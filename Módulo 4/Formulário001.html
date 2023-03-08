@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="onf"><!-- autocomplete on ou off faz com que o auto preenchimento do formulário não apareça / GET e POST - Get: fica visível na url o que coloca no formulário ou na busca e o GET aceita só 3.000 bytes ou 3.000 caracteres. (não aconselhável o uso do GET para dados sensíveis). O POST: esconde as pesquisas e tudo que coloca no formulário na url e aceita mais de 3.000 caracteres -->
+        <p><label for="Lnome">Nome:</label> <!-- O label serve para 'ligar' o Nome: com o input id -->
+            <input type="text" name="name" id="Lnome"></p>
+        <p><label for="Lsobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="Lsobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
